@@ -1,0 +1,92 @@
+Folow this step to extute the code
+What the App Does
+The homepage (home.html) includes a form where the user can enter a city name.
+
+On form submission, the views.py file likely:
+
+Reads the city name from the form,
+
+Uses the API key from key.py to call a weather service (e.g., OpenWeatherMap),
+
+Retrieves weather data (temperature, humidity, description, etc.),
+
+Then displays the data on results.html.
+
+🚀 How to Run the Project
+Make sure you have Python and Django installed on your system.
+
+🧰 Prerequisites
+Python 3.7+
+
+pip (Python package manager)
+
+Django (Install via pip)
+
+✅ Step-by-Step Instructions
+Open Terminal / Command Prompt
+
+Navigate to the Project Folder
+
+bash
+Copy
+Edit
+cd "Weather App with Python Django"
+(Optional) Create a Virtual Environment
+
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install Django
+
+bash
+Copy
+Edit
+pip install django
+Run Migrations
+
+bash
+Copy
+Edit
+python manage.py migrate
+Run the Server
+
+bash
+Copy
+Edit
+python manage.py runserver
+Open the App in Browser
+
+Visit:
+📍 http://127.0.0.1:8000/
+
+Using the App
+
+Enter a city name in the form.
+
+Submit it to view the weather report on a new page.
+
+If the API key is valid and the request is successful, it will show live weather data.
+
+🔐 Notes on API Key
+There is a file: weather_api/key.py.
+This likely contains a line like:
+
+python
+Copy
+Edit
+api_key = "your_actual_api_key"
+You may need to:
+
+Replace "your_actual_api_key" with a real key from OpenWeatherMap or similar.
+
+If you don’t have one, sign up at https://openweathermap.org/api.
+
+✅ Summary of Features
+Feature	Description
+🔍 City Input Form	User enters a city name
+☁️ API Integration	Fetches real-time weather data
+📃 Result Page	Displays weather conditions dynamically
+🧱 Modular Design	Uses Django templates for clean structure
+🖼️ Static Assets	Stylish front-end with weather icons, etc.
