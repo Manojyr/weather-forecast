@@ -1,0 +1,21 @@
+Weather App with Python Django/
+├── weather_api/               # Main Django app
+│   ├── views.py               # Core logic for weather API call
+│   ├── urls.py                # URL routing
+│   ├── models.py              # DB models (minimal or unused)
+│   ├── key.py                 # Likely contains the weather API key
+│   ├── admin.py, apps.py, etc.
+│   └── migrations/            # DB migrations
+│
+├── templates/                 # HTML templates
+│   ├── base.html              # Base layout
+│   └── weather_api/          
+│       ├── home.html          # Homepage (weather input form)
+│       └── results.html       # Weather results page
+│
+├── staticfiles/              # All static files (CSS, JS, images)
+│   ├── admin/                # Default Django admin CSS/JS
+│   ├── css/, js/, fonts/, images/
+│
+├── manage.py                 # Django's command-line utility
+└── db.sqlite3 (maybe missing until first run)
